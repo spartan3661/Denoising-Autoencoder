@@ -1,0 +1,9 @@
+*.pth
+*.zip
+DIV2K/
+DIV2K_valid_HR
+DIV2K_train_HR
+input_screenshots
+outputs
+venv
+noise.py
