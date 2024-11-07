@@ -1,0 +1,5 @@
+pillow
+tqdm
+ipykernel
+torch==2.0.1+cu124 -f https://download.pytorch.org/whl/torch_stable.html
+requests

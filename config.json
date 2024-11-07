@@ -1,0 +1,19 @@
+{
+    "data": {
+        "train_dir": "./DIV2K_train_HR",
+        "valid_dir": "./DIV2K_valid_HR",
+        "resized_clean_train_dir": "./DIV2K/resized_clean_train",
+        "resized_clean_valid_dir": "./DIV2K/resized_clean_valid",
+        "resized_noisy_train_dir": "./DIV2K/resized_noisy_train",
+        "resized_noisy_valid_dir": "./DIV2K/resized_noisy_valid"
+    },
+    "image_processing": {
+        "resize_size": [1024, 1024],
+        "noise_std": 25.0
+    },
+    "training": {
+        "batch_size": 4,
+        "learning_rate": 0.001,
+        "num_epochs": 10
+    }
+}
