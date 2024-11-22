@@ -1,0 +1,37 @@
+{
+    "base_dir": "./coco_dataset",
+    "train_limit": 10000,
+    "valid_limit": 2000,
+    "resize_shape": [512, 512],
+    "train_resize_shape": [384, 384],
+    "train_clean_dir": "./coco_dataset/train_clean",
+    "train_noisy_dir": "./coco_dataset/train_noisy",
+    "valid_clean_dir": "./coco_dataset/valid_clean",
+    "valid_noisy_dir": "./coco_dataset/valid_noisy",
+    "annotations_dir": "./coco_dataset/annotations",
+    "annotations_zip_url": "http://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+    "noise_parameters": {
+      "noise_type": "gaussian",
+      "stddev": 0.1,
+      "sp_prob": 0.05
+    },
+    "k_fold": 2,
+    "denoise_model": {
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0009,
+      "epochs": 5,
+      "optimizer_weight_decay": 0.001,
+      "batch_size": 16,
+      "mse_alpha": 0.4,
+      "ssim_beta": 0.6,
+      "scheduler": {
+        "mode": "min",
+        "factor": 0.1,
+        "patience": 3
+      }
+    },
+    "use_model": {
+      "image_id": 724
+    }
+  }
+  
