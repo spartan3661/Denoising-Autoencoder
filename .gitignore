@@ -1,0 +1,8 @@
+# ignore all
+*
+!.gitignore
+
+# allow .py .ipynb .json
+!*.py
+!*.ipynb
+!*.json
